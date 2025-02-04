@@ -1,0 +1,143 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+.guide-links {
+    padding: 40px 0px !important;
+    gap: 10px;
+    color: rgb(146, 146, 146);
+}
+
+.guide-links a {
+    color: rgb(146, 146, 146);
+    text-decoration: none;
+}
+
+.selected {
+    color: black !important;
+}
+
+/* @media screen and (min-width: 320px) and (max-width: 767px) {
+    .guide-links {
+        width: 100%;
+        background-color: red !important;
+        flex-wrap: wrap;
+        font-size: 15px;
+        padding: 30px 0px !important;
+        gap: 4px;
+        line-height: 20px;
+    }
+} */
+
+.main-container {
+    width: 1255px;
+    max-width: 90%;
+}
+
+.product-left-section {
+    height: 780px;
+}
+
+.right-part {
+    
+    background-image: url(../imgs/Product/Product\ 1-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.filter {
+    height: 30px;
+}
+
+.hot {
+    background-color: red;
+}
+
+.sale {
+    background-color: black;
+}
+
+.search-icon {
+    border-radius: 50%;
+}
+
+.product-right-section h3 {
+    padding-bottom: 24px !important;
+}
+
+
+.rating span {
+    padding-left: 7px !important;
+}
+
+.rating-and-stock {
+    padding-bottom: 39px !important;
+}
+
+.four-colors .color {
+    padding: 5px !important;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.check-cart {
+    background-color: rgb(163, 163, 163) !important;
+}
+
+.icons {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+    border-bottom: 1px solid grey;
+    font-size: 14px;
+}
+
+.compare img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icons {
+    gap: 32px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.meta-content {
+    padding-top: 24px !important;
+    padding-bottom: 20px !important;
+}
+
+
+.titles-container {
+    border-bottom: 1px solid black;
+}
+
+.related-product {
+    height: 70vh;
+}
+
+.product-img {
+    height: 85%;
+    background-image: url(../imgs/07-2-1-450x572.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    height: 15%;
+}
+
+.product-img:hover {
+    background-image: url(../imgs/07-450x572.jpg);
+}
+

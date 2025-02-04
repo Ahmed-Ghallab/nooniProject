@@ -1,203 +1,696 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Nooni - Online Shopping Egypt </title>
-    <meta name="description" content="Say Hello To Your Favourite Brands! Check Our Wide Range Of Products on nooni. shop Now! We Have All Your Needs With The Best">
-    <link rel="icon"  href="./assets/imgs/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Nooni - Online Shopping Egypt </title>
+  <meta name="description"
+    content="Say Hello To Your Favourite Brands! Check Our Wide Range Of Products on nooni. shop Now! We Have All Your Needs With The Best">
+  <link rel="icon" href="./assets/imgs/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link rel="stylesheet" href="./assets/styles/global.css">
-    <link rel="stylesheet" href="./assets/styles/index.css">
 
+  <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/index.css">
 </head>
 
 <body>
-    <!-- header start  -->
-    <header class="">
-
-        <nav class=" header-top  navbar navbar-expand-lg navbar-dark bg-black p-0 container-fluid ">
-            <div class="container p-1 ">
-                <div class="leftTopNav navbar-text text-white p-0">
-                    <p class="nav-paragraph m-0">Up to 40% off Best-Selling Furniture. <span class="linkForHover"> <a class="nav-left-link" href="#shop">Shop Now</a> </span>  </p>
-                </div>
-
-                <div class="rightTopNav ">
-                    <ul class="navbar-nav p-0 m-0 d-flex flex-row">
-                        <li class="nav-item dropdown p-0 m-0 menu-items">
-                            <a class=" text-white nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                English
-                            </a>
-                            <ul class="dropdown-menu dropdown-items">
-                              <li><a class="dropdown-item" href="#">Français</a></li>
-                              <li><a class="dropdown-item" href="#">Deutsch </a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown p-0 m-0 menu-items">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                usd
-                            </a>
-                            <ul class="dropdown-menu dropdown-items">
-                              <li><a class="dropdown-item" href="#">USD</a></li>
-                              <li><a class="dropdown-item" href="#">EUR</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-            </div>
-          </nav>
-
-          <nav class="button-header navbar bg-body-tertiary ">
-            <div class="container ">
-                
-                <div class="button-header-left d-flex">
-
-                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button> -->
-                      <div class="navbar-toggler-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">  </div>
-
-                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">nooni</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        
-                        <div class="offcanvas-body">
-                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Shop</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Product</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">About us</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Contact us</a>
-                            </li>
-                          </ul>
-                          <!-- <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                          </form> -->
-                        </div>
-                      </div>
-        
-        
-        
-      
-                      <!-- <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">search</button> -->
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search " viewBox="0 0 16 16" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                      </svg>
-
-
-                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                      <div class="offcanvas-header">
-                          <h5 class="offcanvas-title" id="offcanvasRightLabel">Search for products (0) </h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                      </div>
-                      <div class="offcanvas-body">
-                          <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                          </form>
-                      </div>
-                      </div>
-                
-                </div>
-
-                <div class="button-header-center">
-                    <a class="navbar-brand" href="#">
-                        <img src="./assets/imgs/logo.png" width= 170px" alt="logo">
-                    </a>
-                    
-                </div>
-
-                <div class="button-header-right">
-                    <i class="bi bi-person"></i>
-                    <i class="bi bi-heart"></i>
-                    <i class="bi bi-cart3"></i>
-                </div>
-
-            </div>
-          </nav>
-          
-    </header>
-    
-    <!-- header end  -->
-    
-    <!-- main page start  -->
-     <main class="col-12 bg-black " style="height: 100vh;">
-      <div id="carouselExampleIndicators" class="carousel slide h-100 container">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active bg-dark">
-            <div class="slide bg-danger col-12 d-flex justify-content-center align-items-center flex-wrap " style="height: 100vh;">
-              <div class="leftSideHome1 bg-secondary col-5">
-                <p class="text-uppercase "> new arrivals </p>
-                <h1> Chairs & Seating You'll Love </h1>
-                <p>
-                  Designer chair styles for every space -
-                  <span>Free Shipping</span>
-                </p>
-                <a href="#shop" class="text-black text-uppercase">SHOP NOW</a>
-              </div>
-              <img class="rightSideHome1" src="./assets/imgs/Home/slide-1-home1-2.png" width="col-5" alt="...">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="bg-success col-12" style="height: 100vh;" >slied 3</div>
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <div class="bg-secondary col-12 " style="height: 100vh;" >slied 3</div>
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
+  <!-- header start  -->
+  <header class="">
+    <nav class=" header-top  navbar  navbar-dark bg-black p-0 container-fluid ">
+      <div class="container  p-1 d-flex justify-content-center align-items-center justify-content-md-between">
+        <div class="leftTopNav navbar-text text-white">
+          <p class="nav-paragraph m-0 ">
+            Up to 40% off Best-Selling Furniture.
+            <span class="linkForHover">
+              <a class="nav-left-link text-decoration-none " href="#shop">Shop Now</a>
+            </span>
+          </p>
         </div>
 
+        <div class="rightTopNav d-none d-md-flex  ">
+          <div class="dropdown">
+            <a class="dropA">English
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">Français</a>
+              <a href="#">Deutsch</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="dropA"> usd
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">USD</a>
+              <a href="#">EUR</a>
+            </div>
+          </div>
+        </div>
       </div>
-     </main>
+    </nav>
+    <!-- -------------end top nav--------------- -->
+
+    <nav class="buttom-header navbar col-12 ">
+      <div class="container px-0">
+        <div class="buttom-header-left  d-flex  gap-5">
+          <!-- -------------burger menu------------- -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
+          <!-- <i class="bi bi-list " data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="width: 100px !important; height: 100px !important;"></i> -->
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item d-flex align-items-center gap-5 fs-4">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <i class="bi bi-chevron-right fs-5"></i>
+                </li>
+                <li class="nav-item d-flex align-items-center justify-content-around fs-4">
+                  <a class="nav-link" href="#">Shop</a>
+                  <i class="bi bi-chevron-right fs-5"></i>
+                </li>
+                <li class="nav-item d-flex align-items-center justify-content-around fs-4">
+                  <a class="nav-link" href="./pages/product.html">Product</a>
+                  <i class="bi bi-chevron-right fs-5"></i>
+                </li>
+                <li class="nav-item d-flex align-items-center justify-content-around fs-4">
+                  <a class="nav-link" href="#">Blog</a>
+                  <i class="bi bi-chevron-right fs-5"></i>
+                </li>
+                <li class="nav-item d-flex align-items-center justify-content-around fs-4">
+                  <a class="nav-link" href="#">About us</a>
+                  <i class="bi bi-chevron-right fs-5 opacity-0"></i>
+                </li>
+                <li class="nav-item d-flex align-items-center justify-content-around fs-4">
+                  <a class="nav-link" href="#">Contact us</a>
+                  <i class="bi bi-chevron-right fs-5 opacity-0"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- -------------search icon------------- -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search "
+            viewBox="0 0 16 16" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+          </svg>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+            data-bs-scroll="true">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Search for products (0) </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- -------------logo brand------------- -->
+        <div class="button-header-center">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/imgs/logo.png" width=170px" alt="logo">
+          </a>
+
+        </div>
+
+        <!-- -------------icon in header at rihgt------------- -->
+        <div class="button-header-right d-flex gap-4">
+          <i class="PersonIcon bi bi-person dropdown cursor-pointer d-none d-md-block  " style="font-size: 25px;">
+          </i>
+          <!-- <div class="dropdown-content">
+            <p>log in here</p>
+          </div> -->
+          <a href="#" class="text-black">
+            <i class="bi bi-heart position-relative" style="font-size: 25px;">
+              <span class="navBadges text-white position-absolute translate-middle bg-black p-0 m-0 rounded-circle">
+                0
+              </span>
+            </i>
+          </a>
+          <a href="#" class="text-black">
+            <i class="bi bi-cart3 position-relative" style="font-size: 25px;" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <span class="navBadges text-white position-absolute  translate-middle  bg-black rounded-circle p-0 m-0">
+                0
+              </span>
+            </i>
+          </a>
+
+          <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-basket2-fill opacity-25" style="font-size: 100px;"></i>
+              <p class="">Your cart is currently empty</p>
+            </div>
+          </div>
+        </div>
+    </nav>
+  </header>
+  <!-- header end  -->
+
+  <!-- main page start  -->
+  <!-- add this to main tag to make Carousel moveing and with last  -->
+  <!-- id="carouselExample" class="carousel slide" data-bs-ride="carousel" -->
+  <main class="mainCont col-12 mb-5" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide  container h-100">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class=" carousel-item active">
+          <div class="slide  d-flex justify-content-center align-items-center ">
+            <div class="leftSideHome1  col-6">
+              <p class="text-uppercase  "> new arrivals </p>
+              <h1 class="py-2"> Chairs & Seating You'll Love </h1>
+              <p class="mainP pb-3">
+                Designer chair styles for every space -
+                <span class="fw-bold">Free Shipping</span>
+              </p>
+              <a class=" goLink text-uppercase text-decoration-none" href="#shop">shop now </a>
+            </div>
+            <img class="rightSideHome1   col-6" src="./assets/imgs/Home/slide-1-home1-2.png"
+              alt="home image for some products">
+          </div>
+        </div>
 
 
-    <!-- main page end  -->
+        <div class="carousel-item">
+          <div class="slide  d-flex justify-content-center align-items-center ">
+            <div class="leftSideHome1  col-6">
+              <p class="text-uppercase  "> SALE OFF 30% </p>
+              <h1 class="py-2"> Lamps & Lighting Great Low Prices </h1>
+              <p class="mainP pb-3">
+                Free standard shipping
+                <span class="fw-bold">with $35</span>
+              </p>
+              <a class=" goLink text-uppercase text-decoration-none" href="#shop">shop now </a>
+            </div>
+            <img class="rightSideHome1 col-6 " src="./assets/imgs/Home/slide-2-home1-1.png"
+              alt="home image for some products">
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="slide  d-flex justify-content-center align-items-center">
+            <div class="leftSideHome1  col-6">
+              <p class="text-uppercase  "> SALE OFF 25% </p>
+              <h1 class="py-2"> Discover Living Room Tables </h1>
+              <p class="mainP pb-3">
+                Free standard shipping
+                <span class="fw-bold"> with $45</span>
+              </p>
+              <a class=" goLink text-uppercase text-decoration-none" href="#shop">shop now </a>
+            </div>
+            <img class="rightSideHome1   col-6" src="./assets/imgs/Home/slide-3-home1-1.png" style=" height: 400px;"
+              alt="home image for some products">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- main page end  -->
+
+  <!-- ------------------- SHOP BY CATEGORY start swiper------------------- -->
+  <!-- col-6 col-md-4 col-lg-3 -->
+  <div class="swiper container my-4">
+    <h3 class=" headOfSwiper fw-bold pt-3">SHOP BY CATEGORY </h3>
+    <div class="swiper-wrapper d-flex align-content-center ">
+      <div class="swiper-slide " style="width: 25%;">
+        <div class=" productFigureContainer  d-flex justify-content-center align-items-center gap-4 "
+          style="height: 30vh;">
+          <a href="#">
+            <div class=" overflow-hidden position-relative rounded-circle">
+              <div class="productFigure">
+                <i class="productFigureIcon fa-solid fa-link position-absolute translate-middle start-50 top-50"></i>
+              </div>
+            </div>
+          </a>
+          <div class="productFigureInfo">
+            <a href="" class="text-decoration-none text-black">
+              <h6 class="fw-bold">Chairs</h6>
+            </a>
+            <p class=""> 12 Products</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" style="width: 25%;">
+        <div class=" productFigureContainer  d-flex justify-content-center align-items-center gap-4"
+          style="height: 35vh;">
+          <a href="#">
+            <div class=" overflow-hidden position-relative rounded-circle">
+              <div class="productFigure">
+                <i class="productFigureIcon fa-solid fa-link position-absolute translate-middle start-50 top-50"></i>
+              </div>
+            </div>
+          </a>
+          <div class="productFigureInfo">
+            <a href="" class="text-decoration-none text-black">
+              <h6 class="fw-bold">Table</h6>
+            </a>
+            <p class=""> 5 Products</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" style="width: 25%;">
+        <div class=" productFigureContainer d-flex justify-content-center align-items-center gap-4 "
+          style="height: 35vh;">
+          <a href="#">
+            <div class=" overflow-hidden position-relative rounded-circle">
+              <div class="productFigure">
+                <i class="productFigureIcon fa-solid fa-link position-absolute translate-middle start-50 top-50"></i>
+              </div>
+            </div>
+          </a>
+          <div class="productFigureInfo">
+            <a href="" class="text-decoration-none text-black">
+              <h6 class="fw-bold">Bed</h6>
+            </a>
+            <p class=""> 7 Products</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" style="width: 25%;">
+        <div class=" productFigureContainer d-flex justify-content-center align-items-center gap-4"
+          style="height: 35vh;">
+          <a href="#">
+            <div class=" overflow-hidden position-relative rounded-circle">
+              <div class="productFigure">
+                <i class="productFigureIcon fa-solid fa-link position-absolute translate-middle start-50 top-50"></i>
+              </div>
+            </div>
+          </a>
+          <div class="productFigureInfo">
+            <a href="" class="text-decoration-none text-black">
+              <h6 class="fw-bold">Lamp</h6>
+            </a>
+            <p class=""> 7 Products</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- ------------------- SHOP BY CATEGORY end slider------------------- -->
+
+  <!--------------------------big sale sections start ---------------------------->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left side - big sale -->
+      <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+        <div class="lampSide d-flex flex-column justify-content-center">
+          <div class="lampSideInfo">
+            <h2 class="lampSideH pb-5">Up To 40% Off <br> Top Lamp Brands</h2>
+            <a class="goLink text-uppercase text-decoration-none" href="#shop">shop now</a>
+          </div>
+        </div>
+
+        <div class="newSide d-flex flex-column justify-content-start pt-4 ps-4">
+          <p class="text-uppercase">new products</p>
+          <h2>Up To 25% Off Cabinets</h2>
+          <a class="goLink text-uppercase text-decoration-none" href="#shop">shop now</a>
+        </div>
+      </div>
+
+      <!-- Right side - big sale -->
+      <div class="col-12 col-lg-6 bigSaleSide text-center mb-3 mb-lg-0">
+        <div class="bigSaleSideInfo pt-5">
+          <p class="text-white text-uppercase">big sale</p>
+          <h2 class="text-white">Up to 70% Off <br> Furniture & Decor</h2>
+          <a class="goLink text-uppercase text-decoration-none text-white" href="#shop">shop now</a>
+        </div>
+      </div>
+
+      <!--start Bottom side - CouponSide -->
+      <div class="col-12 CouponSide bg-red my-4">
+        <div class="CouponSideInfo d-flex align-items-center gap-5 h-100">
+          <h2>10%</h2>
+          <div>
+            <h3 class="text-capitalize">get more pay less</h3>
+            <p class="text-capitalize">on orders $500 use coupon code: <span
+                class="fw-bolder text-uppercase">wsd10</span></p>
+          </div>
+        </div>
+      </div>
+      <!--end Bottom side - CouponSide -->
+    </div>
+  </div>
+  <!--------------------------big sale sections end ---------------------------->
+
+  <!-------------------------- Best Modern Furniture sections SRART ---------------------------->
+  <div class="container my-5">
+    <div class="row g-4">
+
+      <div class="col-12 col-lg-3 text-center text-lg-start">
+        <h2 class="mb-2 mb-lg-3 text-dark">Best Modern Furniture</h2>
+        <a href="#" class="d-none d-lg-block text-black text-decoration-none fw-medium">
+          See All >>
+        </a>
+      </div>
+      <!-- Product Cards -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card product-card border-0">
+          <div class="position-relative image-container">
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/Product 1.jpg" class="img-fluid default-image" alt="">
+            </a>
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/hover-Product 1-1.jpg" class="img-fluid hover-image" alt="">
+            </a>
+            <div class="position-absolute top-0 start-0 d-flex gap-2 p-2">
+              <span class="badge text-uppercase" style="background-color: rgba(209,2,2,1);">hot</span>
+              <span class="badge bg-black text-uppercase">sale</span>
+            </div>
+            <a href="./pages/Product.html"
+              class="btnHomeProduct btn btn-light rounded-0 w-100 text-uppercase p-2">select options</a>
+            <div class="position-absolute bottom-0 end-0 d-flex flex-column gap-3 p-3 iconsTip">
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Quick View" style="white-space: nowrap;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Compare">
+                <i class="fa-solid fa-code-compare"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card-body ">
+            <a href="./pages/Product.html" class="text-dark text-decoration-none">
+              <p class="text-black productName"> Wood Outdoor Adirondack Chair </p>
+            </a>
+            <div class="d-flex justify-content-start gap-2">
+              <span class="text-black fw-bold"> &#0036; 1,009</span>
+              <span class="text-muted text-decoration-line-through">&#0036; 1,259</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-    <!-- -------------------new section------------------- -->
-     <div class="container ">
-      <h2> OUR BLOG </h2>
-      <div id="carouselExample" class="carousel slide" >
-        <div class="carousel-inner">
-          <div class="carousel-item active d-flex flex-wrap w-100">
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card product-card border-0 ">
+          <div class="position-relative image-container">
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/Product 2.jpg" class="img-fluid default-image" alt="">
+            </a>
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/hover-Product 2.jpg" class="img-fluid hover-image" alt="">
+            </a>
+            <a href="./pages/Product.html"
+              class="btnHomeProduct btn btn-light rounded-0 w-100 text-uppercase p-2">select options</a>
+            <div class="position-absolute bottom-0 end-0 d-flex flex-column gap-3 p-3 iconsTip">
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Quick View" style="white-space: nowrap;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Compare">
+                <i class="fa-solid fa-code-compare"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card-body ">
+            <a href="./pages/Product.html" class="text-dark text-decoration-none">
+              <p class="text-black productName"> Solid Wood Bar Storage Cabinet </p>
+            </a>
+            <div class="d-flex justify-content-start gap-2">
+              <span class="text-black fw-bold"> &#0036; 1,009</span>
+              <span class="text-muted text-decoration-line-through">&#0036; 1,259</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card product-card border-0">
+          <div class="position-relative image-container">
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/Product 3.jpg" class="img-fluid default-image" alt="">
+            </a>
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/hover-Product 3.jpg" class="img-fluid hover-image" alt="">
+            </a>
+            <a href="./pages/Product.html"
+              class="btnHomeProduct btn btn-light rounded-0 w-100 text-uppercase p-2">select options</a>
+            <div class="position-absolute bottom-0 end-0 d-flex flex-column gap-3 p-3 iconsTip">
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Quick View" style="white-space: nowrap;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Compare">
+                <i class="fa-solid fa-code-compare"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card-body ">
+            <a href="./pages/Product.html" class="text-dark text-decoration-none">
+              <p class="text-black productName"> Solid Wood Bed With Fabric Headboard </p>
+            </a>
+            <div class="d-flex justify-content-start gap-2">
+              <span class="text-black fw-bold"> &#0036; 1,009</span>
+              <span class="text-muted text-decoration-line-through">&#0036; 1,259</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card product-card border-0">
+          <div class="position-relative image-container">
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/Product 4.jpg" class="img-fluid default-image" alt="">
+            </a>
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/hover-Product 4.jpg" class="img-fluid hover-image" alt="">
+            </a>
+            <div class="position-absolute top-0 start-0 d-flex gap-2 p-2">
+              <span class="badge bg-secondary text-uppercase">sold out </span>
+            </div>
+            <a href="./pages/Product.html"
+              class="btnHomeProduct btn btn-light rounded-0 w-100 text-uppercase p-2">select options</a>
+            <div class="position-absolute bottom-0 end-0 d-flex flex-column gap-3 p-3 iconsTip">
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Quick View" style="white-space: nowrap;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Compare">
+                <i class="fa-solid fa-code-compare"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card-body ">
+            <a href="./pages/Product.html" class="text-dark text-decoration-none">
+              <p class="text-black productName"> Floor Lamp With Polyester Shade </p>
+            </a>
+            <div class="d-flex justify-content-start gap-2">
+              <span class="text-black fw-bold"> &#0036; 1,009</span>
+              <span class="text-muted text-decoration-line-through">&#0036; 1,259</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card product-card border-0">
+          <div class="position-relative image-container">
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/Product 5.jpg" class="img-fluid default-image" alt="">
+            </a>
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/hover-Product 5.jpg" class="img-fluid hover-image" alt="">
+            </a>
+            <div class="position-absolute top-0 start-0 d-flex gap-2 p-2">
+              <span class="badge text-uppercase" style="background-color: rgba(209,2,2,1);">hot</span>
+            </div>
+            <a href="./pages/Product.html"
+              class="btnHomeProduct btn btn-light rounded-0 w-100 text-uppercase p-2">select options</a>
+            <div class="position-absolute bottom-0 end-0 d-flex flex-column gap-3 p-3 iconsTip">
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Quick View" style="white-space: nowrap;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Compare">
+                <i class="fa-solid fa-code-compare"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card-body ">
+            <a href="./pages/Product.html" class="text-dark text-decoration-none">
+              <p class="text-black productName"> Garden Chair With Armrests </p>
+            </a>
+            <div class="d-flex justify-content-start gap-2">
+              <span class="text-black fw-bold"> &#0036; 1,009</span>
+              <span class="text-muted text-decoration-line-through">&#0036; 1,259</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card product-card border-0">
+          <div class="position-relative image-container">
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/Product 6.jpg" class="img-fluid default-image" alt="">
+            </a>
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/hover-Product 3.jpg" class="img-fluid hover-image" alt="">
+            </a>
+            <div class="position-absolute top-0 start-0 d-flex gap-2 p-2">
+              <span class="badge bg-black text-uppercase">sale</span>
+            </div>
+            <a href="./pages/Product.html"
+              class="btnHomeProduct btn btn-light rounded-0 w-100 text-uppercase p-2">select options</a>
+            <div class="position-absolute bottom-0 end-0 d-flex flex-column gap-3 p-3 iconsTip">
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Quick View" style="white-space: nowrap;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Compare">
+                <i class="fa-solid fa-code-compare"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card-body ">
+            <a href="./pages/Product.html" class="text-dark text-decoration-none">
+              <p class="text-black productName"> Led Steel Floor Lamp </p>
+            </a>
+            <div class="d-flex justify-content-start gap-2">
+              <span class="text-black fw-bold"> &#0036; 1,009</span>
+              <span class="text-muted text-decoration-line-through">&#0036; 1,259</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card product-card border-0">
+          <div class="position-relative image-container">
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/Product 7.jpg" class="img-fluid default-image" alt="">
+            </a>
+            <a href="./pages/Product.html" class="d-block">
+              <img src="./assets/imgs/Home/hover-Product 7.jpg" class="img-fluid hover-image" alt="">
+            </a>
+            <a href="./pages/Product.html"
+              class="btnHomeProduct btn btn-light rounded-0 w-100 text-uppercase p-2">select options</a>
+            <div class="position-absolute bottom-0 end-0 d-flex flex-column gap-3 p-3 iconsTip">
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Quick View" style="white-space: nowrap;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Compare">
+                <i class="fa-solid fa-code-compare"></i>
+              </a>
+              <a href="#" class="btn btn-light rounded-circle border-0 linktip" data-toggle="tooltip"
+                data-placement="left" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card-body ">
+            <a href="./pages/Product.html" class="text-dark text-decoration-none">
+              <p class="text-black productName"> Teak Garden Chair With Armrests </p>
+            </a>
+            <div class="d-flex justify-content-start gap-2">
+              <span class="text-black fw-bold"> &#0036; 1,009</span>
+              <span class="text-muted text-decoration-line-through">&#0036; 1,259</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------- Best Modern Furniture sections END ---------------------------->
+
+
+
+
+  <!-- ------------------- OUR BLOG section start------------------- -->
+  <div class="container my-4 ">
+    <h2 class="ourBlog py-4"> OUR BLOG </h2>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex flex-wrap w-100">
             <div class="leftCarousel col-6 ">
               <a href="#" class="blogToGo">
-                <img src="./assets/imgs/Home/blog-1-1174x862.jpg" class="img-blog "  alt="...">
+                <img src="./assets/imgs/Home/blog-1-1174x862.jpg" class="img-blog " alt="...">
               </a>
-
-              <div class=" auther-contain rounded-circle position-absolute d-flex justify-content-center align-items-center" >
+              <div
+                class=" auther-contain rounded-circle position-absolute d-flex justify-content-center align-items-center">
                 <a href="#">
-                  <img src="./assets/imgs/Home/auther.jpeg" class=" img-auther  rounded-circle" alt="..." style="width: 50px; height: 50px;">
+                  <img src="./assets/imgs/Home/auther.jpeg" class=" img-auther  rounded-circle" alt="..."
+                    style="width: 40px; height: 40px;">
                 </a>
               </div>
-
               <span class="date-time bg-white text-black position-absolute  text-uppercase"> Jan 9, 2025 </span>
             </div>
 
@@ -213,55 +706,209 @@
                   Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis.
                   Nam nec diam ultricies, malesuada
                 </p>
-                <a class=" readMore text-uppercase text-decoration-none" href="">read more </a>
-
+                <a class=" goLink text-uppercase text-decoration-none" href="">read more </a>
               </div>
 
-              <a href="#" class="hamada col-4  bg-danger">
-                <div class="  ">
-  
-                  <!-- <div class=" auther-containLeft rounded-circle position-absolute d-flex justify-content-center align-items-center" >
-                    <a href="#">
-                      <img src="./assets/imgs/Home/auther.jpeg" class=" img-auther  rounded-circle" alt="..." style="width: 50px; height: 50px;">
-                    </a>
-                  </div>
-    
-                  <span class="date-timeLeft bg-white text-black position-absolute  text-uppercase"> Jan 9, 2025 </span> -->
-                </div>    
-
-              </a>
-          
+              <div class="secondSide  col-4  bg-danger position-relative">
+                <div
+                  class=" autherContainRight rounded-circle position-absolute d-flex justify-content-center align-items-center">
+                  <a href="#">
+                    <img src="./assets/imgs/Home/auther.jpeg" class=" img-autherRight  rounded-circle" alt="..."
+                      style="width: 40px; height: 40px;">
+                  </a>
+                </div>
+                <span class="dateTimeRight bg-white text-black position-absolute  text-uppercase"> Jan 9, 2025 </span>
+              </div>
             </div>
           </div>
-
-
-
-          <div class="carousel-item">
-            <img src="./assets/imgs/Home/banner-1.jpg" class="d-block w-100" alt="...">
-          </div>
-
-
-
-
-          
-
         </div>
 
-        <button class="carousel-control-prev btn-circle" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="  rounded-circle bg-black  carousel-control-prev-icon " aria-hidden="true"></span>
-          <span class=" visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="rounded-circle bg-black carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+        <div class="carousel-item ">
+          <div class="d-flex flex-wrap w-100">
+            <div class="leftCarousel col-6 ">
+              <a href="#" class="blogToGo">
+                <img src="./assets/imgs/Home/blog-2-1174x862.jpg" class="img-blog " alt="...">
+              </a>
+
+              <div
+                class=" auther-contain rounded-circle position-absolute d-flex justify-content-center align-items-center">
+                <a href="#">
+                  <img src="./assets/imgs/Home/auther.jpeg" class=" img-auther  rounded-circle" alt="..."
+                    style="width: 40px; height: 40px;">
+                </a>
+              </div>
+              <span class="date-time bg-white text-black position-absolute  text-uppercase"> Jan 9, 2025 </span>
+            </div>
+
+            <div class="rightCarousel col-6  d-flex ">
+              <div class="firstSide col-8 d-flex flex-column justify-content-center px-3">
+                <div class="contTopLinks text-uppercase ">
+                  <a class="topLinks text-decoration-none" href="#">Chair</a>
+                  <span>,</span>
+                  <a class="topLinks text-decoration-none" href="#">Furniture</a>
+                </div>
+                <h2 class="py-3"> What is Feng Shui and How Can I Use It When I Decorate? </h2>
+                <p>
+                  Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada
+                </p>
+                <a class=" goLink text-uppercase text-decoration-none" href="">read more </a>
+              </div>
+
+              <div class="secondSide blogTwoSide  col-4  position-relative ">
+                <div
+                  class=" autherContainRight rounded-circle position-absolute d-flex justify-content-center align-items-center">
+                  <a href="#">
+                    <img src="./assets/imgs/Home/auther.jpeg" class=" img-autherRight  rounded-circle" alt="..."
+                      style="width: 40px; height: 40px;">
+                  </a>
+                </div>
+                <span class="dateTimeRight bg-white text-black position-absolute  text-uppercase"> Jan 9, 2025 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev btn-circle" type="button" data-bs-target="#carouselExample"
+        data-bs-slide="prev">
+        <span class="  rounded-circle bg-black  carousel-control-prev-icon " aria-hidden="true"></span>
+        <span class=" visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="rounded-circle bg-black carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- ------------------- OUR BLOG section ended------------------- -->
+
+  <!-- ------------------- background vedio section start------------------- -->
+  <div class="videoSiction col-12 my-5">
+    <video autoplay muted loop id="backVideo" class="col-12">
+      <source src="./assets/imgs/Home/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4" type="video/mp4">
+    </video>
+    <div
+      class="layerTextWood text-uppercase d-flex justify-content-center align-items-center position-absolute text-center">
+      <a href="#" class="text-decoration-none">
+        <h1> wood </h1>
+      </a>
+    </div>
+  </div>
+  <!-- ------------------- background vedio section ended------------------- -->
+
+  <!-- ------------------- footer start------------------- -->
+  <footer id="footer">
+    <!-- top footer -->
+    <div class="topFooter">
+      <div class="container">
+        <div class="row d-flex">
+
+          <div
+            class="col-12 order-2 my-5 my-lg-0 my-md-0 text-center justify-content-center col-md-4 col-lg-3  text-lg-start">
+            <img src="./assets/imgs/logo.png" width=170px" alt="logo">
+            <p class="textTime">
+              Text: +00(234)23-45-666 <br>
+              Mon – Fri: 8 am – 8 pm <br>
+              Sat – Sun: 8 am – 7 pm
+            </p>
+          </div>
+
+          <div class="col-6 order-4 col-md-4  col-lg-2 ">
+            <h3 class="footer-title">ABOUT</h3>
+            <ul class="footer-links">
+              <li><a href="#"> Our Story </a></li>
+              <li><a href="#"> Careers </a></li>
+              <li><a href="#"> Influencers </a></li>
+              <li><a href="#"> Join our team </a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 order-3 col-md-4  col-lg-3 ">
+            <h3 class="footer-title"> CUSTOMER SERVICES </h3>
+            <ul class="footer-links">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">Find Store</a></li>
+              <li><a href="#">Book appointment</a></li>
+              <li><a href="#">Shipping & Returns</a></li>
+            </ul>
+          </div>
+          <!-- justify-content-md-center align-items-md-center text-sm-center text-sm-center order-md-1 -->
+          <div
+            class="rightMailSection col-12 pb-5 order-1 text-center justify-content-center col-md-12 col-lg-4 text-lg-start order-lg-4">
+            <h3 class="footer-title">SIGN UP FOR EMAILS</h3>
+            <p class="my-4"> Enjoy 15% off* your first order when sign up to our newsletter </p>
+            <div class="input-group ">
+              <input type="email" class="form-control p-2" placeholder="Your e-mail address" aria-label="e-mail"
+                aria-describedby="e-mail" name="email" required style="background-color: #f2f2f2;" />
+              <button type="button" class="btn  text-white text-uppercase bg-black ">Subscribe </button>
+            </div>
+            <div class="socialIcons d-flex gap-4 mt-4 justify-content-center justify-content-lg-start ">
+              <a href="#" class="text-black">
+                <i class="fa fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-black">
+                <i class="fa fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="text-black">
+                <i class="fa fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="text-black">
+                <i class="fa fa-brands fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /top footer -->
+
+    <!-- bottom footer -->
+    <div
+      class=" buttomFooter pt-3 container border-top d-flex flex-wrap flex-column align-items-center text-center flex-lg-row justify-content-lg-between ">
+      <div class="order-lg-2 ">
+        <p class="copyRights">
+          &copy; Nooni. All Rights Reserved.
+        </p>
       </div>
 
+      <div class="d-flex order-lg-1">
+        <ul class="footerRightLinks footer-links d-flex gap-4">
+          <li class="p-0 m-0"> <a class="text-decoration-none " href="#">Privacy Policy</a> </li>
+          <li class="p-0 m-0"> <a class="text-decoration-none " href="#">Help</a> </li>
+          <li class="p-0 m-0"> <a class="text-decoration-none " href="#">FAQs</a> </li>
+        </ul>
+      </div>
+
+      <div class="order-lg-3">
+        <ul class="footer-payments d-flex">
+          <li> <i class="fa-brands fa-cc-mastercard"></i> </li>
+          <li> <i class="fa-brands fa-cc-paypal"></i> </li>
+          <li> <i class="fa-brands fa-cc-discover"></i></li>
+          <li> <i class="fa-brands fa-cc-apple-pay"></i> </li>
+          <li> <i class="fa-brands fa-cc-visa"></i> </li>
+        </ul>
+      </div>
+    </div>
+
+    <button id="goTop" class="goTop bg-black position-fixed p-3 pointer-event border-0">
+      <i class="fa-solid fa-arrow-up-long text-white"></i>
+    </button>
+    <!-- /bottom footer -->
+  </footer>
+  <!-- ------------------- footer ended------------------- -->
 
 
-     </div>
+  <!-- --------bootstrap------- -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- ____swiper____ -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Glopal JS -->
+  <script src="./index.js"></script>
 
-
-    <script src=""></script>
 </body>
+
 </html>

@@ -1,68 +1,445 @@
-@media screen and (max-width: 767px) {
-    .rightTopNav {
-        display: none;
-    }
-    .leftTopNav{
-        margin: auto;
-    }
-}
-
-.header-top{
+/* -------------------------header start--------------------------- */
+.header-top {
     font-size: 12px !important;
     text-transform: uppercase;
     max-width: 100%;
     min-height: 24px;
     line-height: 20px;
-
-}
-.dropdown-items {
-  display: none;
 }
 
-.menu-items:hover .dropdown-items {
-  display: block;
-}
-.menu-items:hover .nav-link {
-    color: var(--top-link-hover-color) !important;
-}
 .linkForHover:hover .nav-left-link {
-    color: var(--top-link-hover-color) !important;
+    color: var(--top-link-hover-color);
 }
 
+.linkForHover {
+    position: relative;
+    max-width: fit-content;
+}
+
+.linkForHover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--top-link-hover-color);
+    bottom: -2px;
+    left: 0;
+}
+
+.linkForHover::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: var(--top-link-hover-color);
+    transition: width 0.3s ease-in-out;
+    bottom: -2px;
+    left: 0;
+}
+
+.linkForHover:hover::before {
+    width: 0%;
+}
+
+.linkForHover:hover::after {
+    width: 100%;
+}
+
+.dropA {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    font-size: 12px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: var(--top-link-hover-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropA {
+    color: var(--top-link-hover-color);
+}
+
+.bi:hover {
+    color: gray !important;
+    cursor: pointer !important;
+}
+
+.navBadges {
+    font-size: 12px !important;
+    width: 20px !important;
+    height: 20px !important;
+    text-align: center !important;
+    top: 5px;
+    left: 25px;
+}
+
+/* @media screen and (max-width: 767px) {
+    .rightTopNav {
+        display: none;
+    }
+
+    .leftTopNav {
+        margin: auto;
+    }
+} */
 
 /* -------------------------main start--------------------------- */
-.slide img{
+
+/* .slide img{
     object-fit: contain;
+} */
+
+.mainCont {
+    height: 90vh;
 }
+
+.mainCont,
+.buttom-header {
+    background-color: var(--main-bg-color);
+}
+
+.leftSideHome1 p {
+    font-size: 18px;
+    letter-spacing: 1.2px;
+}
+
+.leftSideHome1 h1 {
+    font-size: 63px;
+    letter-spacing: 0.100em;
+}
+
+.leftSideHome1 .mainP {
+    font-size: 16px;
+}
+
+.carousel-indicators {
+    justify-content: flex-start;
+}
+
+.carousel-indicators button {
+    width: 1rem !important;
+    height: 1rem !important;
+    border: 1px solid black !important;
+    border-radius: 50% !important;
+    margin-left: 15px !important;
+}
+
+.carousel-indicators button.active {
+    background-color: black;
+}
+
 /* -------------------------main end--------------------------- */
 
+/* ------------------- SHOP BY CATEGORY end slider  ------------------- */
+.headOfSwiper {
+    letter-spacing: 1.3px;
+}
 
+.productFigure {
+    width: 120px;
+    height: 120px;
+    background-image: url(../imgs/Home/chair-1.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease;
+    position: relative;
+}
 
-/* -------------------------OUR BLOG start--------------------------- */
-.leftCarousel{
+.productFigure::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #73737386;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.productFigure:hover {
+    transform: scale(1.2);
+}
+
+.productFigure:hover::after {
+    opacity: 1;
+}
+
+.productFigure:hover .productFigureIcon {
+    display: block;
+}
+
+.productFigureIcon {
+    display: none;
+    font-size: 13px;
+    color: white;
+    /* transform: translate(-50%, -50%); */
+    position: absolute;
+    z-index: 2;
+}
+
+.productFigureInfo p {
+    letter-spacing: 0.075em;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+.productFigureInfo a:hover {
+    color: var(--red-when-hover) !important;
+}
+
+/* ------------------- SHOP BY CATEGORY end slider  ------------------- */
+
+/* -------------------------big sale sections start --------------------------- */
+.lampSide {
+    height: 300px;
+    max-height: 100%;
+    background-image: url(../imgs/Home/banner-0-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.lampSideInfo h2 {
+    font-size: 40px;
+    /* font-size: 48px; */
+    font-weight: 400;
+    letter-spacing: 0.075em;
+}
+
+.newSide {
+    height: 300px;
+    max-height: 100%;
+    background-image: url(../imgs/Home/banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.newSide h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+}
+
+.newSide p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    margin-bottom: 5px;
+}
+
+.bigSaleSide {
+    height: 600px;
+    max-height: 100%;
+    background-image: url(../imgs/Home/banner-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bigSaleSideInfo h2 {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    margin-bottom: 40px;
+}
+
+.bigSaleSideInfo p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+}
+
+.bigSaleSideInfo a {
+    color: white;
+}
+
+.CouponSide {
+    height: 200px;
+    max-height: 100%;
+    background-image: url(../imgs/Home/banner-3.jpg);
+    background-size: cover;
+    background-position: bottom;
     overflow: hidden;
 }
- .carousel-control-next-icon:hover{
+
+.CouponSideInfo h2 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.CouponSideInfo h3 {
+    font-size: 36px;
+    font-weight: normal;
+    word-spacing: 8px;
+    letter-spacing: 0.075em;
+    line-height: 1em;
+}
+
+.CouponSideInfo p {
+    font-size: 18px;
+    line-height: 2em;
+    letter-spacing: 0.075em;
+}
+
+/* -------------------------big sale sections end --------------------------- */
+
+/* -------------------------- Best Modern Furniture sections SRART --------------------------- */
+.card {
+    font-size: 15px;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.product-card {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.default-image,
+.hover-image {
+    width: 100%;
+    transition: opacity 0.3s ease;
+    /* cursor: pointer; */
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.image-container:hover .default-image {
+    opacity: 0;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+}
+
+.productName:hover {
+    color: var(--red-when-hover) !important;
+}
+
+.btnHomeProduct {
+    width: 100%;
+    font-size: 0.867rem;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btnHomeProduct:hover {
+    color: white;
+    background-color: var(--red-when-hover);
+}
+
+.iconsTip {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .iconsTip {
+    opacity: 1;
+}
+
+.product-card:hover .btnHomeProduct {
+    opacity: 1;
+}
+
+.iconsTip a:hover {
+    background-color: var(--red-when-hover);
+    color: white;
+}
+
+
+.badge {
+    font-size: 12px !important;
+    font-weight: 400;
+    color: white;
+    border-radius: 0;
+    padding: 5px 10px;
+    z-index: 2000;
+}
+
+/* -------------------------- Best Modern Furniture sections END --------------------------- */
+
+/* ----------------------------OUR BLOG start------------------------------- */
+.ourBlog {
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.leftCarousel {
+    overflow: hidden;
+}
+
+.carousel-control-next-icon:hover {
     background-color: gray !important;
 }
-.carousel-control-prev-icon:hover{
+
+.carousel-control-prev-icon:hover {
     background-color: gray !important;
 }
+
 .img-blog:hover {
-    transform: scale(1.1);    
+    transform: scale(1.1);
 }
-.img-blog{
+
+.img-blog {
     transition: 500ms ease;
     max-width: 100%;
 }
-.auther-contain{
-    width: 70px;
-    height: 70px;
+
+.auther-contain {
+    width: 60px;
+    height: 60px;
     bottom: 1rem;
     left: 1rem;
     background-color: rgba(255, 255, 255, 0.281);
 }
-.date-time{
+
+.date-time {
     padding: 5px 10px;
     font-size: 15px;
     top: 1rem;
@@ -70,31 +447,37 @@
 }
 
 /* ---------- */
-.topLinks{
-    color: #848484;
+.topLinks {
+    color: var(--top-link-hover-color);
     font-size: 14px !important;
 }
-.topLinks:hover{
-    color: rgba(209,2,2,1);
+
+.topLinks:hover {
+    color: var(--red-when-hover);
 }
-.contTopLinks span{
-    color: #848484;
+
+.contTopLinks span {
+    color: var(--top-link-hover-color);
 }
-.firstSide h2{
+
+.firstSide h2 {
     color: black;
-    font-size: 30px;
+    font-size: 29px;
     letter-spacing: 0.025em;
 }
-.firstSide h2:hover{
-    color: rgba(209,2,2,1);
+
+.firstSide h2:hover {
+    color: var(--red-when-hover);
 }
-.firstSide p{
-    color: #848484;
+
+.firstSide p {
+    color: var(--top-link-hover-color);
     font-size: 16px;
     line-height: 1.8;
     font-size: 1.12em;
 }
-.firstSide .readMore{
+
+.goLink {
     color: black;
     font-size: 0.93rem;
     font-weight: 600;
@@ -104,7 +487,7 @@
     max-width: fit-content;
 }
 
-.firstSide .readMore::before {
+.goLink::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -113,7 +496,8 @@
     bottom: -2px;
     left: 0;
 }
-.firstSide .readMore::after {
+
+.goLink::after {
     content: "";
     position: absolute;
     width: 0;
@@ -123,28 +507,155 @@
     bottom: -2px;
     left: 0;
 }
-.firstSide .readMore:hover::before {
+
+.goLink:hover::before {
     width: 0%;
 }
-.firstSide .readMore:hover::after {
+
+.goLink:hover::after {
     width: 100%;
 }
 
-.rightCarousel{
-    overflow: hidden;
-}
-.hamada {
-    background-image:url(../imgs/Home/blog-2-1174x862.jpg);
+.secondSide {
+    background-image: url(../imgs/Home/blog-2-1174x862.jpg);
     background-position: left center;
-    background-size: cover
-  }
-
-  .hamada:hover {
-    transform: scale(1.1);    
-}
-.hamada{
+    background-size: cover;
+    overflow: hidden;
     transition: 500ms ease;
     max-width: 100%;
 }
 
+.blogTwoSide {
+    background-image: url(../imgs/Home/blog-1-1174x862.jpg);
+}
+
+.secondSide:hover {
+    transform: scale(1.1);
+}
+
+.autherContainRight {
+    width: 60px;
+    height: 60px;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+.dateTimeRight {
+    padding: 5px 10px;
+    font-size: 15px;
+    top: 1rem;
+    left: 1rem;
+}
+
 /* -------------------------OUR BLOG end--------------------------- */
+
+/* ------------------- background vedio section start --------------------- */
+.videoSiction {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+#backVideo {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layerTextWood {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    background-color: #07070773;
+}
+
+.layerTextWood h1 {
+    color: #FFFFFF30;
+    font-size: 120px;
+    line-height: 1em;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+}
+
+/* ------------------- background vedio section ended --------------------- */
+
+
+/* --------------------------footer start------------------------------- */
+#footer {
+    color: var(--top-link-hover-color);
+    font-size: 15px;
+}
+
+.textTime {
+    line-height: 40px;
+    margin-top: 2rem;
+}
+
+.footer-title {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-weight: 700;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.footer-links {
+    padding: 5px 0;
+}
+
+.footer-links li {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.footer-links li a {
+    color: var(--top-link-hover-color);
+    text-decoration: none;
+    transition: 600ms ease 0s;
+}
+
+.fa {
+    color: transparent !important;
+    font-size: 25px;
+    -webkit-text-stroke-width: 1px !important;
+    -webkit-text-stroke-color: black;
+    transition: 600ms ease 0s;
+}
+
+.socialIcons a i:hover {
+    -webkit-text-stroke-color: red;
+}
+
+.rightMailSection button:hover {
+    background-color: var(--red-when-hover) !important;
+}
+
+.footer-payments li i:hover,
+.footer-links li a:hover {
+    color: var(--red-when-hover);
+}
+
+.footer-payments li {
+    list-style: none;
+    margin: 0px 5px;
+}
+
+.footer-payments i {
+    font-size: 35px;
+    padding: 5px;
+}
+
+/* --------------------------footer ended------------------------------- */
+
+.goTop {
+    display: none;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1000;
+}
