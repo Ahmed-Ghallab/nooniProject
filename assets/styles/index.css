@@ -15,17 +15,15 @@
     position: relative;
     max-width: fit-content;
 }
-
 .linkForHover::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 1px;
-    background-color: var(--top-link-hover-color);
-    bottom: -2px;
+    background-color: white;
+    bottom: -1px;
     left: 0;
 }
-
 .linkForHover::after {
     content: "";
     position: absolute;
@@ -33,7 +31,7 @@
     height: 1px;
     background-color: var(--top-link-hover-color);
     transition: width 0.3s ease-in-out;
-    bottom: -2px;
+    bottom: -1px;
     left: 0;
 }
 
@@ -62,7 +60,7 @@
     background-color: #f1f1f1;
     min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 9;
 }
 
 .dropdown-content a {
@@ -99,6 +97,13 @@
     left: 25px;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 8;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* @media screen and (max-width: 767px) {
     .rightTopNav {
         display: none;
@@ -114,34 +119,27 @@
 /* .slide img{
     object-fit: contain;
 } */
-
 .mainCont {
     height: 90vh;
 }
-
 .mainCont,
 .buttom-header {
     background-color: var(--main-bg-color);
 }
-
 .leftSideHome1 p {
     font-size: 18px;
     letter-spacing: 1.2px;
 }
-
 .leftSideHome1 h1 {
-    font-size: 63px;
+    font-size: 60px;
     letter-spacing: 0.100em;
 }
-
 .leftSideHome1 .mainP {
     font-size: 16px;
 }
-
 .carousel-indicators {
     justify-content: flex-start;
 }
-
 .carousel-indicators button {
     width: 1rem !important;
     height: 1rem !important;
@@ -149,11 +147,55 @@
     border-radius: 50% !important;
     margin-left: 15px !important;
 }
-
 .carousel-indicators button.active {
     background-color: black;
 }
+.rightSideHome1 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.slide {
+    height: 100%;
+}
 
+.carousel-item {
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .mainCont {
+        height: 90vh;
+        padding: 20px 0;
+    }
+
+    .slide {
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+
+    .leftSideHome1, .rightSideHome1 {
+        width: 100% !important;
+        padding: 0 15px;
+    }
+
+    .leftSideHome1 h1 {
+        font-size: 25px !important;
+    }
+
+    .leftSideHome1 p {
+        font-size: 14px !important;
+    }
+
+    .rightSideHome1 img {
+        max-height: 200px;
+    }
+    .carousel-indicators button {
+        width: 0.5rem !important;
+        height: 0.5rem !important;
+    }
+}
 /* -------------------------main end--------------------------- */
 
 /* ------------------- SHOP BY CATEGORY end slider  ------------------- */
@@ -169,6 +211,15 @@
     background-size: cover;
     transition: transform 0.5s ease;
     position: relative;
+}
+.nd-productFigure{
+    background-image: url(../imgs/Home/table.jpg);
+}
+.rd-productFigure{
+    background-image: url(../imgs/Home/bed.jpg);
+}
+.th-productFigure{
+    background-image: url(../imgs/Home/lamp-1.jpg);
 }
 
 .productFigure::after {
@@ -192,6 +243,9 @@
 
 .productFigure:hover .productFigureIcon {
     display: block;
+}
+.swiper-slide{
+    flex-shrink: 10;
 }
 
 .productFigureIcon {
@@ -217,16 +271,40 @@
 
 /* -------------------------big sale sections start --------------------------- */
 .lampSide {
+    position: relative;
     height: 300px;
     max-height: 100%;
-    background-image: url(../imgs/Home/banner-0-removebg-preview.png);
+    overflow: hidden;
+}
+
+.lampSide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
+    background-image: url(../imgs/Home/banner-0-removebg-preview.png);
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+.lampSide:hover::before {
+    transform: scale(1.1);
+}
+
+.lampSideInfo {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .lampSideInfo h2 {
     font-size: 40px;
-    /* font-size: 48px; */
     font-weight: 400;
     letter-spacing: 0.075em;
 }
@@ -285,6 +363,17 @@
     background-position: bottom;
     overflow: hidden;
 }
+@media screen and (max-width: 767px) {
+    .CouponSide {
+        height: 400px;
+        background-position: 70% center;
+    }
+    .CouponSideInfo{
+        flex-direction: column;
+        padding-top: 4rem;
+    }
+}
+
 
 .CouponSideInfo h2 {
     font-size: 72px;
@@ -309,6 +398,12 @@
 /* -------------------------big sale sections end --------------------------- */
 
 /* -------------------------- Best Modern Furniture sections SRART --------------------------- */
+.HFurniture{
+    font-size: 48px;
+    letter-spacing: 3.6px;
+    line-height: 1.25 !important;
+}
+
 .card {
     font-size: 15px;
     color: black;
@@ -422,11 +517,11 @@
     background-color: gray !important;
 }
 
-.img-blog:hover {
+.img-toscale:hover {
     transform: scale(1.1);
 }
 
-.img-blog {
+.img-toscale{
     transition: 500ms ease;
     max-width: 100%;
 }
@@ -581,7 +676,11 @@
     letter-spacing: 0.2em;
     font-weight: 700;
 }
-
+@media screen and (max-width: 767px) {
+    .videoSiction {
+        height: 200px !important;
+    }
+}
 /* ------------------- background vedio section ended --------------------- */
 
 
@@ -658,4 +757,90 @@
     bottom: 0px;
     right: 0px;
     z-index: 1000;
+}
+
+/* ======================================================================================================= */
+@media screen and (max-width: 767px) {
+    .HFurniture {
+        font-size: 20px;
+    }
+    .lampSideH{
+        font-size: 20px;
+    }
+    .leftSideHome1 h1{
+        font-size: 25px !important;
+    }
+    .leftSideHome1 p{
+        font-size: 14px !important;
+    }
+    .firstSide h2{
+        font-size: 20px;
+    }
+    .layerTextWood  h1{
+        font-size: 60px ;
+    }
+    .goLink{
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    .HFurniture {
+        font-size: 25px !important;
+    }
+    .lampSideH{
+        font-size: 25px !important;
+    }
+    .bigSaleSideH{
+        font-size: 25px !important;
+    }
+    .CouponSideInfo h2{
+        font-size: 50px;
+    }
+    .CouponSideInfo h3{
+        font-size: 25px;
+    }
+    .CouponSideInfo p{
+        font-size: 15px;
+    }
+    .newSide h2{
+        font-size: 25px;
+    }
+    .leftSideHome1 h1{
+        font-size: 39px;
+    }
+    .leftSideHome1 p{
+        font-size: 14px;
+    }
+    .goLink{
+        font-size: 14px !important;
+    }
+    .headOfSwiper{
+        font-size: 18px;
+        text-align: center;
+    }
+    .HFurniture{
+        font-size: 20px !important;
+    }
+    .ourBlog{
+        font-size: 18px;
+        text-align: center;
+    }
+    .firstSide h2{
+        font-size: 23px;
+    }
+    .firstSide p{
+        font-size: 15px;
+    }
+    .topLinks{
+        font-size: 13px;
+    }
+    .date-time{
+        font-size: 12px ;
+    }
+    .dateTimeRight{
+        font-size: 12px ;
+    }
+    .layerTextWood  h1{
+        font-size: 80px ;
+    }
 }

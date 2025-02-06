@@ -1,0 +1,180 @@
+/* info about us strat  */
+.infoAbout h2{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.25em;
+    letter-spacing: 0.025em;
+}
+.infoAbout p{
+    font-size: 20px;
+    line-height: 1.54em;
+    color: var(--top-link-hover-color);
+}
+@media screen and (max-width: 767px) {
+    .infoAbout h2{
+        font-size: 35px;
+    }
+    .infoAbout p{
+        font-size: 17px;
+    }
+}
+/* info about us end */
+
+/* ************img strat*************** */
+.fullImg{
+    height: 500px;
+    overflow: hidden;
+}
+.fullImg img{
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+    .fullImg {
+        height: 250px !important;
+    }
+}
+/* ************img end*************** */
+
+ /* -------------END how we work section ---------------------- */
+ .leftWorkImg{
+    overflow: hidden;
+ }
+ .rightwork-head{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+ }
+ .rightwork h6{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 0.9px;
+ }
+ .rightwork p{
+    color: var(--top-link-hover-color);
+    font-size: 18px;
+    line-height: 30px;
+ }
+ @media screen and (max-width: 767px) {
+    .rightwork-head{
+        font-size: 18px;
+     }
+     .rightwork h6{
+        font-size: 15px;
+     }
+     .rightwork p{
+        font-size: 15px;
+     }
+}
+/* --------------END how we work section --------------------- */
+
+/* --------------- Slider main container START--------------- */
+
+.swiperSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.swiper{
+    width: 100% !important;
+    padding: 50px 0;
+}
+.personalBox{
+    position: relative;
+    width: 258px;
+    aspect-ratio: 4/5;
+}
+.swiper-slide img{
+    object-fit: contain;
+    transition: 500ms ease;
+}
+.overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: none;
+    transition: 700ms ease;
+}
+.overlay .socialIcons{
+    color: white !important;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+.overlay .socialIcons i{
+    -webkit-text-stroke-color: white;
+    display: none;
+}
+.swiper-slide:hover .overlay{
+    display: block;
+}
+.swiper-slide:hover .overlay i{
+    display: block;
+}
+.swiper-slide:hover .personlImg{
+    transform: scale(1.1);
+}
+.swiper-wrapper{
+    transition-timing-function: linear !important;
+}
+.personalAbout h6{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.personalAboutP{
+    transition: 150ms ease 0s;
+    text-align: center;
+    font-size: 25px;
+    color: gray !important;
+}
+.personalAboutA:hover .personalAboutP{
+    color: var(--red-when-hover) !important;
+}
+/* --------------- Slider main container END --------------- */
+
+/* ************img fixed strat*************** */
+.imgcontainer {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.backphoto {
+    background-image: url(../imgs/about/about-2.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+    background-attachment: fixed;
+}
+.backphotoContent {
+    height: 100%;
+    width: 100%;
+    color: white;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+.backphotobtn:hover{
+    color: white !important;
+    background-color: var(--red-when-hover) !important;
+}
+/* ************img fixed end*************** */

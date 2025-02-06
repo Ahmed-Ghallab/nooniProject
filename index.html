@@ -12,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -26,7 +27,7 @@
 <body>
   <!-- header start  -->
   <header class="">
-    <nav class=" header-top  navbar  navbar-dark bg-black p-0 container-fluid ">
+    <nav id="header-top" class=" header-top  navbar  navbar-dark bg-black p-0 container-fluid ">
       <div class="container  p-1 d-flex justify-content-center align-items-center justify-content-md-between">
         <div class="leftTopNav navbar-text text-white">
           <p class="nav-paragraph m-0 ">
@@ -62,7 +63,7 @@
     <!-- -------------end top nav--------------- -->
 
     <nav class="buttom-header navbar col-12 ">
-      <div class="container px-0">
+      <div class="container  px-0">
         <div class="buttom-header-left  d-flex  gap-5">
           <!-- -------------burger menu------------- -->
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
@@ -80,13 +81,13 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item d-flex align-items-center gap-5 fs-4">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <ul class="navbar-nav">
+                <li class="nav-item d-flex align-items-center justify-content-around fs-4">
+                  <a class=" nav-link active" aria-current="page" href="#">Home</a>
                   <i class="bi bi-chevron-right fs-5"></i>
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-around fs-4">
-                  <a class="nav-link" href="#">Shop</a>
+                  <a class="nav-link" href="./shop.html">Shop</a>
                   <i class="bi bi-chevron-right fs-5"></i>
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-around fs-4">
@@ -98,11 +99,11 @@
                   <i class="bi bi-chevron-right fs-5"></i>
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-around fs-4">
-                  <a class="nav-link" href="#">About us</a>
+                  <a class="nav-link" href="./pages/aboutUs.html">About us</a>
                   <i class="bi bi-chevron-right fs-5 opacity-0"></i>
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-around fs-4">
-                  <a class="nav-link" href="#">Contact us</a>
+                  <a class="nav-link" href="./pages/contactUs.html">Contact us</a>
                   <i class="bi bi-chevron-right fs-5 opacity-0"></i>
                 </li>
               </ul>
@@ -139,7 +140,7 @@
         </div>
 
         <!-- -------------icon in header at rihgt------------- -->
-        <div class="button-header-right d-flex gap-4">
+        <div class="button-header-right d-flex gap-4 me-4">
           <i class="PersonIcon bi bi-person dropdown cursor-pointer d-none d-md-block  " style="font-size: 25px;">
           </i>
           <!-- <div class="dropdown-content">
@@ -180,8 +181,8 @@
   <!-- add this to main tag to make Carousel moveing and with last  -->
   <!-- id="carouselExample" class="carousel slide" data-bs-ride="carousel" -->
   <main class="mainCont col-12 mb-5" data-bs-ride="carousel">
-    <div id="carouselExampleIndicators" class="carousel slide  container h-100">
-      <div class="carousel-indicators">
+    <div id="carouselExampleIndicators" class="carousel slide container h-100">
+      <div class="carousel-indicators d-flex  justify-content-center justify-content-lg-start">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -190,53 +191,55 @@
           aria-label="Slide 3"></button>
       </div>
 
-      <div class="carousel-inner">
-        <div class=" carousel-item active">
-          <div class="slide  d-flex justify-content-center align-items-center ">
-            <div class="leftSideHome1  col-6">
-              <p class="text-uppercase  "> new arrivals </p>
-              <h1 class="py-2"> Chairs & Seating You'll Love </h1>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active  h-100">
+          <div class="slide d-flex justify-content-center align-items-center gap-5 gap-md-0  gap-lg-0  h-100">
+            <div class="leftSideHome1 col-6">
+              <p class="mainT text-uppercase">new arrivals</p>
+              <h1 class="py-2">Chairs & Seating You'll Love</h1>
               <p class="mainP pb-3">
                 Designer chair styles for every space -
                 <span class="fw-bold">Free Shipping</span>
               </p>
-              <a class=" goLink text-uppercase text-decoration-none" href="#shop">shop now </a>
+              <a class="goLink text-uppercase text-decoration-none" href="#shop">shop now</a>
             </div>
-            <img class="rightSideHome1   col-6" src="./assets/imgs/Home/slide-1-home1-2.png"
-              alt="home image for some products">
+            <div class="col-6 rightSideHome1">
+              <img class="img-fluid" src="./assets/imgs/Home/slide-1-home1-2resize.png" alt="">
+            </div>
           </div>
         </div>
 
-
-        <div class="carousel-item">
-          <div class="slide  d-flex justify-content-center align-items-center ">
-            <div class="leftSideHome1  col-6">
-              <p class="text-uppercase  "> SALE OFF 30% </p>
-              <h1 class="py-2"> Lamps & Lighting Great Low Prices </h1>
+        <div class="carousel-item  h-100">
+          <div class="slide d-flex justify-content-center align-items-center gap-4 gap-lg-0 gap-md-0  h-100">
+            <div class="leftSideHome1 col-6">
+              <p class="mainT text-uppercase">SALE OFF 30%</p>
+              <h1 class="py-2">Lamps & Lighting Great Low Prices</h1>
               <p class="mainP pb-3">
                 Free standard shipping
                 <span class="fw-bold">with $35</span>
               </p>
-              <a class=" goLink text-uppercase text-decoration-none" href="#shop">shop now </a>
+              <a class="goLink text-uppercase text-decoration-none" href="#shop">shop now</a>
             </div>
-            <img class="rightSideHome1 col-6 " src="./assets/imgs/Home/slide-2-home1-1.png"
-              alt="home image for some products">
+            <div class="col-6 rightSideHome1">
+              <img class="img-fluid" src="./assets/imgs/Home/slide-2-home1-1resize.png" alt="">
+            </div>
           </div>
         </div>
 
-        <div class="carousel-item">
-          <div class="slide  d-flex justify-content-center align-items-center">
-            <div class="leftSideHome1  col-6">
-              <p class="text-uppercase  "> SALE OFF 25% </p>
-              <h1 class="py-2"> Discover Living Room Tables </h1>
+        <div class="carousel-item  h-100">
+          <div class="slide d-flex justify-content-center align-items-center gap-5 gap-md-0  gap-lg-0  h-100">
+            <div class="leftSideHome1 col-6">
+              <p class="mainT text-uppercase">SALE OFF 25%</p>
+              <h1 class="py-2">Discover Living Room Tables</h1>
               <p class="mainP pb-3">
                 Free standard shipping
-                <span class="fw-bold"> with $45</span>
+                <span class="fw-bold">with $45</span>
               </p>
-              <a class=" goLink text-uppercase text-decoration-none" href="#shop">shop now </a>
+              <a class="goLink text-uppercase text-decoration-none" href="#shop">shop now</a>
             </div>
-            <img class="rightSideHome1   col-6" src="./assets/imgs/Home/slide-3-home1-1.png" style=" height: 400px;"
-              alt="home image for some products">
+            <div class="col-6 rightSideHome1">
+              <img class="img-fluid" src="./assets/imgs/Home/slide-3-home1-1.png" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -248,13 +251,12 @@
   <!-- col-6 col-md-4 col-lg-3 -->
   <div class="swiper container my-4">
     <h3 class=" headOfSwiper fw-bold pt-3">SHOP BY CATEGORY </h3>
-    <div class="swiper-wrapper d-flex align-content-center ">
-      <div class="swiper-slide " style="width: 25%;">
-        <div class=" productFigureContainer  d-flex justify-content-center align-items-center gap-4 "
-          style="height: 30vh;">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide" style="width: 25%;">
+        <div class=" productFigureContainer d-flex align-items-center gap-4 " style="height: 30vh;">
           <a href="#">
             <div class=" overflow-hidden position-relative rounded-circle">
-              <div class="productFigure">
+              <div class="productFigure st-productFigure">
                 <i class="productFigureIcon fa-solid fa-link position-absolute translate-middle start-50 top-50"></i>
               </div>
             </div>
@@ -268,12 +270,11 @@
         </div>
       </div>
 
-      <div class="swiper-slide" style="width: 25%;">
-        <div class=" productFigureContainer  d-flex justify-content-center align-items-center gap-4"
-          style="height: 35vh;">
+      <div class="swiper-slide " style="width: 25%;">
+        <div class=" productFigureContainer d-flex  align-items-center gap-4" style="height: 35vh;">
           <a href="#">
             <div class=" overflow-hidden position-relative rounded-circle">
-              <div class="productFigure">
+              <div class="productFigure nd-productFigure">
                 <i class="productFigureIcon fa-solid fa-link position-absolute translate-middle start-50 top-50"></i>
               </div>
             </div>
@@ -287,12 +288,12 @@
         </div>
       </div>
 
-      <div class="swiper-slide" style="width: 25%;">
-        <div class=" productFigureContainer d-flex justify-content-center align-items-center gap-4 "
+      <div class="swiper-slide " style="width: 25%;">
+        <div class=" productFigureContainer  d-flex justify-content-center align-items-center gap-4 "
           style="height: 35vh;">
           <a href="#">
             <div class=" overflow-hidden position-relative rounded-circle">
-              <div class="productFigure">
+              <div class="productFigure rd-productFigure">
                 <i class="productFigureIcon fa-solid fa-link position-absolute translate-middle start-50 top-50"></i>
               </div>
             </div>
@@ -307,11 +308,11 @@
       </div>
 
       <div class="swiper-slide" style="width: 25%;">
-        <div class=" productFigureContainer d-flex justify-content-center align-items-center gap-4"
+        <div class=" productFigureContainer  d-flex justify-content-center align-items-center gap-4"
           style="height: 35vh;">
           <a href="#">
             <div class=" overflow-hidden position-relative rounded-circle">
-              <div class="productFigure">
+              <div class="productFigure th-productFigure">
                 <i class="productFigureIcon fa-solid fa-link position-absolute translate-middle start-50 top-50"></i>
               </div>
             </div>
@@ -333,13 +334,14 @@
   <div class="container my-4">
     <div class="row">
       <!-- Left side - big sale -->
-      <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+      <div class="col-12 col-md-6 col-lg-6 mb-3 mb-lg-0 order-2 order-md-1">
         <div class="lampSide d-flex flex-column justify-content-center">
           <div class="lampSideInfo">
             <h2 class="lampSideH pb-5">Up To 40% Off <br> Top Lamp Brands</h2>
             <a class="goLink text-uppercase text-decoration-none" href="#shop">shop now</a>
           </div>
         </div>
+
 
         <div class="newSide d-flex flex-column justify-content-start pt-4 ps-4">
           <p class="text-uppercase">new products</p>
@@ -349,16 +351,16 @@
       </div>
 
       <!-- Right side - big sale -->
-      <div class="col-12 col-lg-6 bigSaleSide text-center mb-3 mb-lg-0">
+      <div class="col-12 col-md-6 col-lg-6 bigSaleSide text-center mb-3 mb-lg-0 order-1 order-md-2">
         <div class="bigSaleSideInfo pt-5">
           <p class="text-white text-uppercase">big sale</p>
-          <h2 class="text-white">Up to 70% Off <br> Furniture & Decor</h2>
+          <h2 class="bigSaleSideH text-white">Up to 70% Off <br> Furniture & Decor</h2>
           <a class="goLink text-uppercase text-decoration-none text-white" href="#shop">shop now</a>
         </div>
       </div>
 
       <!--start Bottom side - CouponSide -->
-      <div class="col-12 CouponSide bg-red my-4">
+      <div class="col-12 CouponSide bg-red my-4 order-3 order-md-3">
         <div class="CouponSideInfo d-flex align-items-center gap-5 h-100">
           <h2>10%</h2>
           <div>
@@ -377,9 +379,10 @@
   <div class="container my-5">
     <div class="row g-4">
 
-      <div class="col-12 col-lg-3 text-center text-lg-start">
-        <h2 class="mb-2 mb-lg-3 text-dark">Best Modern Furniture</h2>
-        <a href="#" class="d-none d-lg-block text-black text-decoration-none fw-medium">
+      <div
+        class="col-12 col-lg-3 col-md-4 d-flex flex-column justify-content-lg-center justify-content-md-center  text-center text-lg-start text-md-start">
+        <h2 class="HFurniture mb-2 mb-lg-3 text-black ">Best Modern Furniture</h2>
+        <a href="#" class="d-none d-lg-block d-md-block  text-black text-decoration-none fw-medium">
           See All >>
         </a>
       </div>
@@ -425,7 +428,6 @@
           </div>
         </div>
       </div>
-
 
       <div class="col-6 col-md-4 col-lg-3">
         <div class="card product-card border-0 ">
@@ -672,7 +674,6 @@
 
 
 
-
   <!-- ------------------- OUR BLOG section start------------------- -->
   <div class="container my-4 ">
     <h2 class="ourBlog py-4"> OUR BLOG </h2>
@@ -682,7 +683,7 @@
           <div class="d-flex flex-wrap w-100">
             <div class="leftCarousel col-6 ">
               <a href="#" class="blogToGo">
-                <img src="./assets/imgs/Home/blog-1-1174x862.jpg" class="img-blog " alt="...">
+                <img src="./assets/imgs/Home/blog-1-1174x862.jpg" class="img-toscale " alt="...">
               </a>
               <div
                 class=" auther-contain rounded-circle position-absolute d-flex justify-content-center align-items-center">
@@ -728,7 +729,7 @@
           <div class="d-flex flex-wrap w-100">
             <div class="leftCarousel col-6 ">
               <a href="#" class="blogToGo">
-                <img src="./assets/imgs/Home/blog-2-1174x862.jpg" class="img-blog " alt="...">
+                <img src="./assets/imgs/Home/blog-2-1174x862.jpg" class="img-toscale " alt="...">
               </a>
 
               <div
@@ -797,7 +798,7 @@
   <!-- ------------------- background vedio section ended------------------- -->
 
   <!-- ------------------- footer start------------------- -->
-  <footer id="footer">
+  <footer id="footer"  class="mt-5">
     <!-- top footer -->
     <div class="topFooter">
       <div class="container">
