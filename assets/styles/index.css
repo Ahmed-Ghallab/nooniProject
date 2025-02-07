@@ -533,6 +533,12 @@ header {
     left: 1rem;
     background-color: rgba(255, 255, 255, 0.281);
 }
+@media screen and (max-width: 767px) {
+    .auther-contain {
+        bottom: 42% !important;
+        left: 1rem;
+    }
+}
 
 .date-time {
     padding: 5px 10px;
@@ -635,6 +641,7 @@ header {
     left: 1rem;
     background-color: rgba(255, 255, 255, 0.281);
 }
+
 
 .dateTimeRight {
     padding: 5px 10px;

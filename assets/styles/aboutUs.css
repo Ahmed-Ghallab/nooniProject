@@ -66,6 +66,12 @@
      .rightwork p{
         font-size: 15px;
      }
+     .personalAbout h6{
+        font-size: 15px !important;
+     }
+     .personalAboutP{
+        font-size: 20px !important;
+     }
 }
 /* --------------END how we work section --------------------- */
 
@@ -178,3 +184,9 @@
     background-color: var(--red-when-hover) !important;
 }
 /* ************img fixed end*************** */
+
+.goTop {
+    display: none;
+    bottom: 0px;
+    right: 0px;
+}
